@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
 
 :root {
-  --brand-100: #8d40bc;
-  --brand-200: #8d40bc;
-  --brand-300: #8d40bc;
-  --brand-400: #8d40bc;
+  --brand-100: #c281eb;
+  --brand-200: #b974e4;
+  --brand-300: #aa61d6;
+  --brand-400: #9e50cf;
   --brand-500: #8d40bc;
-  --brand-600: #8d40bc;
+  --brand-600: #752da1;
 
   font-family: "DM Sans";
 }
@@ -20,6 +20,7 @@ code:has(.shiki-table) {
 }
 
 code:not(:has(.shiki-table)) {
+  border-radius: 24px !important;
   padding: 8px 16px !important;
   border: 0px none !important;
   background-color: #272c35 !important;
@@ -39,7 +40,7 @@ pre:not(:has(.shiki-table))::before {
   align-items: center;
   font-size: 16px;
   background: #282c33 !important;
-  color: var(--background-accent) !important;
+  color: #abb8cc !important;
   font-family: 'JetBrains Mono' !important;
   border: 1px solid #17191b !important;
   border-bottom: 4px solid #17191b !important;
@@ -49,11 +50,11 @@ pre:not(:has(.shiki-table))::before {
   padding-left: 18px;
 }
 
-.app-2CXKsg button {
-  border-radius: 12px;
+.app-2CXKsg button, button {
+  border-radius: 8px !important;
 }
 
-.avatarWrapper-1B9FTW withTagAsButton-OsgQ9L {
+.avatarWrapper-1B9FTW .withTagAsButton-OsgQ9L {
   border-radius: 20px;
   padding-bottom: -4px;
 }
@@ -74,17 +75,17 @@ pre:not(:has(.shiki-table))::before {
 }
 
 .botTagRegular-kpctgU svg {
-  border: 1px solid var(--background-accent);
+  border: 1px solid #abb8cc;
   height: 15px;
   width: 15px;
   margin-right: 2px;
   background: var(--background-floating);
   border-radius: 20px;
-  color: var(--background-accent);
+  color: #abb8cc;
 }
 
 .botTagRegular-kpctgU {
-  background: var(--background-accent);
+  background: #abb8cc;
   color: var(--background-floating);
   font-weight: bolder;
   border-radius: 20px !important;
@@ -143,7 +144,7 @@ pre:not(:has(.shiki-table))::before {
   border: 3px solid var(--background-secondary-alt) !important;
 }
 .contentPreview-3fWiuC, .textContentFooter-2JnNv8 {
-  background-color: var(--background-tertiary) !important;
+  background: var(--background-tertiary) !important;
 }
 
 .iconBadge-32fMme {
@@ -260,7 +261,7 @@ pre:not(:has(.shiki-table))::before {
   padding: 6px 18px !important;
   background: #282c33 !important;
   width: fit-content;
-  color: var(--background-accent) !important;
+  color: #abb8cc !important;
   border-radius: 20px !important;
   font-family: 'gg sans' !important;
   border: 2px solid #141618 !important;
@@ -301,7 +302,7 @@ pre:not(:has(.shiki-table))::before {
   --background-secondary: #212428;
   --background-secondary-alt: #17191b;
   --background-tertiary: #141618;
-  --background-accent: #abb8cc;
+  --background-accent: var(--brand-600);
 
   --modal-background: #212428;
   --background-mobile-primary: #212428;
@@ -330,6 +331,14 @@ pre:not(:has(.shiki-table))::before {
   border-bottom-left-radius: 12px;
 }
 
+.chat-2ZfjoI.threadSidebarOpen-1LSXvU {
+    border-radius: 0px;
+}
+.resizeHandle-PBRzPC {
+    background: var(--background-tertiary) !important;
+    width: 6px;
+}
+
 .withTagAsButton-OsgQ9L {
   border-radius: 50px;
   padding-left: 4px;
@@ -349,5 +358,28 @@ pre:not(:has(.shiki-table))::before {
 }
 
 #vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
-  background-color: var(--background-accent);
+  background-color: #abb8cc;
+}
+
+.formContainer-1zrOWf {
+  background: var(--background-floating);
+    padding: 6px;
+    border-radius: 24px;
+    padding-left: 14px;
+}
+.matchingPostsRow-2IiEQ1 {
+  background: var(--background-secondary);
+  border-radius: 8px;
+}
+.tagsSpacer-38ovAE {
+    background-color: var(--background-mobile-secondary) !important;
+    border: 1px solid #161616 !important;
+    
+}
+
+[aria-label='Thread header'].container-ZMc96U {
+  margin: 6px;
+  border-radius: 8px;
+  margin-right: 20px;
+  width: 97%;
 }
