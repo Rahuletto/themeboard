@@ -1,5 +1,7 @@
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
+
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
 
 :root {
   --brand-100: #8d40bc;
@@ -8,22 +10,20 @@
   --brand-400: #8d40bc;
   --brand-500: #8d40bc;
   --brand-600: #8d40bc;
-
-  font-family: \"DM Sans\";
 }
 
 code:has(.shiki-table) {
   border-radius: 24px !important;
   padding: 0px !important;
   background-color: #31353e !important;
-  font-family: \"JetBrains Mono\" !important;
+  font-family: "JetBrains Mono" !important;
 }
 
 code:not(:has(.shiki-table)) {
   padding: 8px 16px !important;
   border: 0px none !important;
   background-color: #272c35 !important;
-  font-family: \"JetBrains Mono\" !important;
+  font-family: "JetBrains Mono" !important;
 }
 
 pre {
@@ -102,7 +102,7 @@ pre:not(:has(.shiki-table))::before {
 }
 
 .codeLine-2C-9aH {
-  font-family: \"JetBrains Mono\" !important;
+  font-family: "JetBrains Mono" !important;
 }
 
 .colorDefault-2_rLdz {
@@ -278,7 +278,7 @@ pre:not(:has(.shiki-table))::before {
   border-top: 4px solid #17191b !important;
   padding: 6px !important;
   background-color: #272c35 !important;
-  font-family: \"JetBrains Mono\";
+  font-family: "JetBrains Mono";
 }
 
 .sidebar-1tnWFu {
