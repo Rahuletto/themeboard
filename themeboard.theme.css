@@ -399,3 +399,15 @@ button {
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
 }
+
+.menu-2TXYjN {
+  border-radius: 16px !important;
+}
+
+.colorDanger-3umuSx {
+  border: 2px solid var(--status-danger) !important;
+}
+
+.colorDanger-3umuSx.focused-3LIdPu {
+  background: var(--status-danger) !important;
+}
