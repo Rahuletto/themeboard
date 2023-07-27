@@ -5,6 +5,7 @@
   --brand-100: #c281eb;
   --brand-200: #b974e4;
   --brand-300: #aa61d6;
+  --brand-360: #aa61d6;
   --brand-400: #9e50cf;
   --brand-500: #8d40bc;
   --brand-560: #752da1;
@@ -109,11 +110,19 @@ button {
 }
 
 .colorDefault-2_rLdz {
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .colorDefault-2_rLdz.focused-3LIdPu {
-  background-color: #8d40bc;
+  background-color: #abb8cc;
+  color: var(--background-tertiary) !important;
+  font-weight: bold;
+}
+
+.colorBrand-26tvUE.focused-3LIdPu {
+  background-color: var(--brand-400);
+  color: var(--background-tertiary) !important;
+  font-weight: bold;
 }
 
 .container-1eFtFS {
@@ -401,13 +410,25 @@ button {
 }
 
 .menu-2TXYjN {
-  border-radius: 16px !important;
-}
-
-.colorDanger-3umuSx {
-  border: 2px solid var(--status-danger) !important;
+  border-radius: 14px !important;
 }
 
 .colorDanger-3umuSx.focused-3LIdPu {
   background: var(--status-danger) !important;
+}
+
+.channelInfo-3jN1ay {
+  background: #8c40bc30;
+  padding: 2px 6px;
+  border-radius: 20px;
+}
+
+
+.channelInfo-3jN1ay div {
+  color: var(--brand-500) !important;
+  font-weight: bold;
+}
+
+.popout-TdhJ6Z {
+  border-radius: 12px !important;
 }
