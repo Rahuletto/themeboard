@@ -1,7 +1,5 @@
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
-
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
-
 
 :root {
   --brand-100: #8d40bc;
@@ -10,6 +8,8 @@
   --brand-400: #8d40bc;
   --brand-500: #8d40bc;
   --brand-600: #8d40bc;
+
+  font-family: "DM Sans";
 }
 
 code:has(.shiki-table) {
@@ -33,14 +33,14 @@ pre {
 }
 
 pre:not(:has(.shiki-table))::before {
-  content: \'Codeblock\';
+  content: 'Codeblock';
   height: 38px;
   display: flex;
   align-items: center;
   font-size: 16px;
   background: #282c33 !important;
   color: var(--background-accent) !important;
-  font-family: \'JetBrains Mono\' !important;
+  font-family: 'JetBrains Mono' !important;
   border: 1px solid #17191b !important;
   border-bottom: 4px solid #17191b !important;
   border-radius: 20px;
@@ -262,7 +262,7 @@ pre:not(:has(.shiki-table))::before {
   width: fit-content;
   color: var(--background-accent) !important;
   border-radius: 20px !important;
-  font-family: \'gg sans\' !important;
+  font-family: 'gg sans' !important;
   border: 2px solid #141618 !important;
 }
 
