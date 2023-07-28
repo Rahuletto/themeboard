@@ -44,7 +44,7 @@
   --orange: #ff9c1c;
   --green: #45db4b;
 
-  font-family: "DM Sans";
+  --profile-gradient-secondary-color: var(--background-secondary);
 }
 
 code:has(.shiki-table) {
@@ -61,11 +61,29 @@ code:not(:has(.shiki-table)) {
   background-color: #272c35 !important;
   font-family: "JetBrains Mono" !important;
 }
+.autocomplete-3NRXG8 {
+  background: var(--background-floating) !important;
+  border-radius: 16px;
+  padding: 4px;
+  
+}
+
+.scroller-18M1mG {
+  padding-right: 0px !important;
+}
+
+.base-2v-uc0 {
+  border-radius: 12px !important;
+}
 
 pre {
   border-radius: 24px !important;
   background-color: #272c35 !important;
   border: 4px solid #17191b !important;
+}
+
+.container-3wLKDe {
+  background-color: transparent;
 }
 
 pre:not(:has(.shiki-table))::before {
@@ -151,14 +169,16 @@ button {
 
 .colorDefault-2_rLdz {
   border-radius: 8px;
+  transition: .3s cubic-bezier(.175, .885, .32, 1.275) !important;
+  padding-right: 6px !important;
   font-family: "DM Sans";
 }
 
 .colorDefault-2_rLdz.focused-3LIdPu {
   background-color: #abb8cc;
   color: var(--background-tertiary) !important;
-  font-weight: bold;
 }
+
 .focused-3LIdPu .tipSubtext-qn0l_- {
   opacity: 0.8;
   color: var(--background-tertiary) !important;
@@ -197,6 +217,7 @@ button {
 
 .container-1PloNW {
   background-color: var(--background-secondary) !important;
+  border-radius: 18px;
   border: 3px solid var(--background-secondary-alt) !important;
 }
 
@@ -236,8 +257,6 @@ button {
 
 .mentioned-Tre-dv {
   background: #ff9c1c13;
-  border-bottom-right-radius: 14px;
-  border-top-right-radius: 14px;
   margin-right: 12px;
 }
 
@@ -475,6 +494,13 @@ button {
   background: var(--status-danger) !important;
 }
 
+.container-q2_DnH {
+  padding: 14px 12px !important;
+  border: 4px solid var(--background-floating);
+  background-color: var(--background-mobile-primary);
+  border-radius: 18px;
+}
+
 .channelInfo-3jN1ay {
   background: #8c40bc30;
   padding: 2px 6px;
@@ -493,16 +519,25 @@ button {
 
 .profileColors-2AgAV4 {
   margin: 12px;
-  height: 89vh;
-  border-radius: 16px;
+  border-radius: 28px;
+}
+
+.userPopoutInner-nv9Y92 .avatarWrapper-eenWra {
+  left: 34px !important;
+}
+
+.userProfileInnerThemedNonPremium-2AJg-H {
+  background: linear-gradient(var(--background-floating), var(--background-secondary) 60px, var(--profile-gradient-secondary-color)) !important;
 }
 
 .userPanelInnerThemed-3YO1BB {
   border-radius: 16px;
 }
+
 .userPanelInnerThemed-3YO1BB::after {
   display: none;
 }
+
 .userPanelInnerThemed-3YO1BB .none-1rXy4P {
   border-radius: 16px;
 
@@ -539,7 +574,6 @@ button {
 .listAvatar-2bU5Uh svg,
 .input-3O04eu,
 .searchBar-2M9mRP,
-input[type="text"],
 .container-1SX9VC,
 .container-2oNtJn,
 .contentWrapper-3vHNP2 {
@@ -552,21 +586,26 @@ input[type="text"],
   margin-top: 0px;
 }
 
-.shinyButton-2Q9MDB:hover {
+.shinyButton-2Q9MDB:hover,
+.shinyButton-2Q9MDB.focused-3LIdPu {
   background: linear-gradient(270deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-pink-for-gradients-2) 33.63%, var(--premium-tier-2-purple-for-gradients)) !important;
   color: var(--background-floating) !important;
   font-weight: 900;
+
 }
 
 .popoutContainer-2wbmiM {
   border-radius: 16px;
 }
 
-.categoryItemDefaultCategorySelected-2YeRUu, .stickerCategoryGenericSelected-DnO2K8,.navButtonActive-1EqC5l {
+.categoryItemDefaultCategorySelected-2YeRUu,
+.stickerCategoryGenericSelected-DnO2K8,
+.navButtonActive-1EqC5l {
   border-radius: 8px !important;
 }
 
-.categoryList-2qRrlj, .wrapper-22rqw6 {
+.categoryList-2qRrlj,
+.wrapper-22rqw6 {
   border-top-right-radius: 12px;
 }
 
@@ -620,10 +659,12 @@ input[type="text"],
 
 .item-2GWPIy {
   flex-direction: row-reverse;
+  transition: .3s cubic-bezier(.175, .885, .32, 1.275) !important;
   justify-content: space-between !important;
 }
 
-button {
+button,
+.closeButton-PCZcma {
   transition: .3s cubic-bezier(.175, .885, .32, 1.275) !important;
 }
 
@@ -631,10 +672,16 @@ button {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+
 button:hover,
 .closeButton-PCZcma:hover {
   opacity: 0.8;
   transform: scale(0.95) !important;
+}
+
+.closeButton-PCZcma:hover {
+  background-color: var(--red);
+  color: var(--activity-card-background);
 }
 
 .sprite-2lxwfc {
