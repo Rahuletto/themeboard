@@ -162,10 +162,32 @@ button[aria-label="Disconnect"] {
   opacity: 0.6;
 }
 
-.avatarWrapper-1B9FTW .withTagAsButton-OsgQ9L,
-.withTagAsButton-OsgQ9L {
+.avatarWrapper-1B9FTW .withTagAsButton-OsgQ9L {
   border-radius: 20px !important;
   padding-bottom: -4px;
+}
+
+.userPopoutOuter-1OHwPL {
+  margin: 0px !important;
+  max-height: 570px;
+}
+
+.divider-on9OTV {
+  background: transparent;
+}
+
+.userPopoutOverlayBackground-3A0Pcz {
+  margin: 16px 8px 8px !important;
+}
+
+.scroller-nxCRu_ {
+  background: var(--background-mobile-primary);
+  border-radius: 14px;
+}
+
+.container-YkUktl .avatar-1EWyVD svg foreignObject {
+  mask: url(#svg-mask-avatar-status-round-0);
+  border-radius: 8px;
 }
 
 .container-JhuCwn {
@@ -256,7 +278,8 @@ button[aria-label="Disconnect"] {
   width: 32px;
 }
 
-.iconWrapper-2awDjA.clickable-ZD7xvu:hover, .iconWrapper-2awDjA.clickable-ZD7xvu.selected-29KTGM:hover {
+.iconWrapper-2awDjA.clickable-ZD7xvu:hover,
+.iconWrapper-2awDjA.clickable-ZD7xvu.selected-29KTGM:hover {
   background: var(--background-mobile-secondary) !important;
   opacity: 0.8;
 }
@@ -431,6 +454,12 @@ button[aria-label="Disconnect"] {
 .sidebar-1tnWFu {
   margin: 3px;
   border-radius: 16px;
+  background: transparent !important;
+}
+
+nav.container-1NXEtd {
+  margin-bottom: 12px;
+  border-radius: 12px;
 }
 
 .theme-dark #vc-spotify-player {
@@ -491,6 +520,7 @@ button[aria-label="Disconnect"] {
 .content-1SgpWY {
   border-radius: 18px;
   margin: 5px;
+  gap: 2px;
 }
 
 .title-31SJ6t,
@@ -510,7 +540,7 @@ button[aria-label="Disconnect"] {
 }
 
 .withTagAsButton-OsgQ9L {
-  border-radius: 50px;
+  border-radius: 12px;
   padding-left: 4px;
 }
 
@@ -606,10 +636,6 @@ button[aria-label="Disconnect"] {
   border-radius: 28px;
 }
 
-.userPopoutInner-nv9Y92 .avatarWrapper-eenWra {
-  left: 34px !important;
-}
-
 .userProfileInnerThemedNonPremium-2AJg-H {
   background: linear-gradient(var(--background-floating), var(--background-secondary) 60px, var(--profile-gradient-secondary-color)) !important;
 }
@@ -624,7 +650,6 @@ button[aria-label="Disconnect"] {
 
 .userPanelInnerThemed-3YO1BB .none-1rXy4P {
   border-radius: 16px;
-
 }
 
 .badgeList-2hF9ig {
@@ -641,8 +666,7 @@ button[aria-label="Disconnect"] {
 }
 
 .container-YkUktl {
-  border-bottom-left-radius: 32px !important;
-  border-bottom-right-radius: 32px !important;
+  border-radius: 32px !important;
 }
 
 .metadataContainer-35U-On {
@@ -684,7 +708,8 @@ button[aria-label="Disconnect"] {
 
 .categoryItemDefaultCategorySelected-2YeRUu,
 .stickerCategoryGenericSelected-DnO2K8,
-.navButtonActive-1EqC5l {
+.navButtonActive-1EqC5l,
+.messageInputContainer-24qqTx {
   border-radius: 8px !important;
 }
 
