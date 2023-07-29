@@ -1,6 +1,10 @@
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=DM+Sans:wght@600;700&display=swap');
 
+.container-1eFtFS {
+  background: linear-gradient(180deg, #191c20, #050607) !important
+}
+
 :root {
   --brand-100: #c281eb;
   --brand-200: #b974e4;
@@ -47,6 +51,17 @@
   --profile-gradient-secondary-color: var(--background-secondary);
 }
 
+.linkCalloutContainer-1CixBe {
+  border-radius: 14px;
+  background-color: #31353e !important;
+}
+
+.linkCalloutContainer-1CixBe span {
+  color: var(--text-link) !important;
+  text-decoration: 2px underline var(--red);
+  font-weight: 400;
+}
+
 code:has(.shiki-table) {
   border-radius: 24px !important;
   padding: 0px !important;
@@ -61,15 +76,16 @@ code:not(:has(.shiki-table)) {
   background-color: #272c35 !important;
   font-family: "JetBrains Mono" !important;
 }
+
 .autocomplete-3NRXG8 {
   background: var(--background-floating) !important;
   border-radius: 16px;
   padding: 4px;
-  
+
 }
 
 .scroller-18M1mG {
-  padding-right: 0px !important;
+  gap: 4px;
 }
 
 .base-2v-uc0 {
@@ -82,7 +98,8 @@ pre {
   border: 4px solid #17191b !important;
 }
 
-.container-3wLKDe {
+.container-3wLKDe,
+.guilds-2JjMmN {
   background-color: transparent;
 }
 
@@ -109,9 +126,40 @@ pre:not(:has(.shiki-table))::before {
   border-radius: 12px !important;
 }
 
+.actionButtons-2vEOUh div span {
+  border-radius: 8px !important;
+}
+
+.actionButtons-2vEOUh {
+  gap: 4px !important;
+}
+
+.actionButtons-2vEOUh button[aria-expanded="true"] {
+  background: var(--red);
+  color: var(--activity-card-background);
+}
+
+.actionButtons-2vEOUh button[aria-expanded="true"]:hover {
+  opacity: 0.6;
+  background: var(--red) !important;
+}
+
 .app-2CXKsg button,
 button {
-  border-radius: 12px !important;
+  border-radius: 8px !important;
+}
+
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx {
+  color: var(--activity-card-background);
+}
+
+button[aria-label="Disconnect"] {
+  color: var(--red);
+}
+
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx:hover {
+  background: var(--green) !important;
+  opacity: 0.6;
 }
 
 .avatarWrapper-1B9FTW .withTagAsButton-OsgQ9L,
@@ -120,14 +168,13 @@ button {
   padding-bottom: -4px;
 }
 
+.container-JhuCwn {
+  padding-bottom: 0px;
+}
+
 .barFill-3RgCsY,
 .unreadRelevant-2f-VSK {
   background: #8d40bc;
-}
-
-.base-2jDfDU {
-  box-shadow: 4px 0px 22px var(--brand-500);
-  border-left: 2px solid var(--brand-500);
 }
 
 .botTagRegular-kpctgU span {
@@ -198,15 +245,34 @@ button {
 .membersWrap-3NUR2t {
   margin: 8px;
   height: 97%;
-  border-radius: 16px;
+  border-radius: 12px;
   background: var(--background-floating);
+}
+
+.iconWrapper-2awDjA {
+  padding: 4px;
+  border-radius: 6px;
+  height: 32px;
+  width: 32px;
+}
+
+.iconWrapper-2awDjA.clickable-ZD7xvu:hover, .iconWrapper-2awDjA.clickable-ZD7xvu.selected-29KTGM:hover {
+  background: var(--background-mobile-secondary) !important;
+  opacity: 0.8;
+}
+
+.iconWrapper-2awDjA.clickable-ZD7xvu.selected-29KTGM {
+  background: var(--background-lighter);
+}
+
+.members-3WRCEx {
+  border-radius: 12px;
 }
 
 .containerDefault-YUSmu3 {
   margin-top: 4px;
 }
 
-.content-1SgpWY,
 .grid-21dB-S {
   background: var(--background-primary) !important;
 }
@@ -241,6 +307,13 @@ button {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   background: transparent;
+}
+
+.markup-eYLPri code.inline {
+  padding: 1px 4px !important;
+  margin: 0px !important;
+  background-color: #1e2124 !important;
+  border-radius: 4px;
 }
 
 .member-48YF_l,
@@ -302,7 +375,8 @@ button {
   border-top-left-radius: 16px;
 }
 
-.scrollableContainer-15eg7h {
+.scrollableContainer-15eg7h,
+.container-2ebMPP {
   border-radius: 12px;
 }
 
@@ -355,8 +429,8 @@ button {
 }
 
 .sidebar-1tnWFu {
-  margin: 8px;
-  border-radius: 20px;
+  margin: 3px;
+  border-radius: 16px;
 }
 
 .theme-dark #vc-spotify-player {
@@ -371,37 +445,60 @@ button {
 
 .theme-dark {
   --background-primary: #272c35;
-  --background-secondary: #212428;
-  --background-secondary-alt: #17191b;
-  --background-tertiary: #141618;
+  --background-secondary: #1f2328;
+  --background-secondary-alt: #15171a;
+  --background-tertiary: #14171a;
   --background-accent: var(--brand-600);
 
-  --modal-background: #212428;
-  --background-mobile-primary: #212428;
-  --background-mobile-secondary: #31353e;
-  --channeltextarea-background: #17191b;
+  --modal-background: #1e2227;
+  --background-mobile-primary: #1f2328;
+  --background-mobile-secondary: #313642;
+  --channeltextarea-background: #16191b;
   --background-message-hover: #abb8cc0a;
   --background-modifier-hover: #abb8cc10;
   --background-modifier-active: #abb8cc1a;
   --background-modifier-selected: #abb8cc1f;
-  --deprecated-card-bg: #12141f63;
-  --background-floating: #141618;
+  --deprecated-card-bg: #13162463;
+  --background-floating: #16191d;
   --deprecated-quickswitcher-input-background: #282c33;
   --elevation-low: none;
   --scrollbar-auto-thumb: #141618;
   --scrollbar-auto-track: #1f232b;
   --scrollbar-thin-thumb: #141618;
-  --activity-card-background: #141618;
-  --input-background: #141618;
+  --activity-card-background: #131518;
+  --input-background: #15181b;
   --input-radius: 25px;
+  --background-lighter: #3d424c;
+}
+
+.chat-2ZfjoI,
+.applicationStore-2nk7Lo,
+.container-2cd8Mz {
+  margin: 3px;
+  border-radius: 16px;
+  border: 2px solid var(--background-mobile-primary);
+}
+
+.lowerBadge-3j0ZAg,
+.mention-3XBnnZ,
+.mentionsBadge-3H1BKJ,
+.iconBadge-3Mmg92 {
+  box-shadow: 0px 0px 10px var(--red);
+  border-radius: 100px;
+}
+
+
+.content-1SgpWY {
+  border-radius: 18px;
+  margin: 5px;
 }
 
 .title-31SJ6t,
-.container-ZMc96U,
-.themed-Hp1KC_ {
+.themed-Hp1KC_,
+.container-ZMc96U {
   background: var(--background-mobile-primary) !important;
-  border-bottom-left-radius: 12px;
 }
+
 
 .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
   border-radius: 0px;
@@ -494,17 +591,11 @@ button {
   border-radius: 18px;
 }
 
-.channelInfo-3jN1ay {
-  background: #8c40bc30;
-  padding: 2px 6px;
-  border-radius: 20px;
-}
 
-
-.channelInfo-3jN1ay div {
+/* .channelInfo-3jN1ay {
   color: var(--brand-500) !important;
   font-weight: bold;
-}
+} */
 
 .popout-TdhJ6Z {
   border-radius: 12px !important;
