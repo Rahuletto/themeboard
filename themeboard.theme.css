@@ -735,20 +735,15 @@ nav.container-1NXEtd,
   margin-top: 0px;
 }
 
-.shinyButton-2Q9MDB {
+.scroller-nxCRu_ .shinyButton-2Q9MDB {
   color: var(--white-500) !important;
   font-weight: bold;
   background: linear-gradient(270deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-pink-for-gradients-2) 33.63%, var(--premium-tier-2-purple-for-gradients)) !important;
 }
 
-.guildBoostCtaBoost-3SH673 .guildBoostCtaBoostContent-kTBm5Z {
-  color: var(--white-500) !important;
-}
-
-.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+.wrapper-1LtZJL div button {
   border-radius: 50px !important;
 }
-
 .popoutContainer-2wbmiM {
   border-radius: 16px;
 }
